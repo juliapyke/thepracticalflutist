@@ -22,7 +22,7 @@ title: The Practical Flutist
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Breaking down the steps to becoming a professional orchestral musician.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "thepracticalflutist" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
