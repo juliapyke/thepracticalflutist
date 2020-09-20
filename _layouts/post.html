@@ -20,16 +20,15 @@ comments: true
           {% endif %}
           <span class="meta">Posted on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
             content=page.content %}
-          </span>          
+          </span>
+          <br>
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_inline_share_toolbox"></div>     
         </div>
+
       </div>
     </div>
   </div>
-  <!-- BEGIN SHAREAHOLIC CODE -->
-  <link rel="preload" href="https://cdn.shareaholic.net/assets/pub/shareaholic.js" as="script" />
-  <meta name="shareaholic:site_id" content="30c6d8c25af393c9873b9f7bc16cdc56" />
-  <script data-cfasync="false" async src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"></script>
-  <!-- END SHAREAHOLIC CODE -->
 </header>
 
 <div class="container">
@@ -75,5 +74,7 @@ comments: true
   (d.head || d.body).appendChild(s);
   })();
   </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+   <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f67a4760848ba3f"></script>
+
+  
 </div>
