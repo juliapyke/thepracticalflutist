@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   {% if page.background %}<meta property="og:image" content="{{ page.background }}">{% endif %}
+  <meta property="og:description" content="{{ page.description }}">
   
   <title>
     {% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}
@@ -22,5 +23,6 @@
 
   <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  
 
 </head>
