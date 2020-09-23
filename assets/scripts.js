@@ -9,13 +9,12 @@ if ("scrollBehavior" in document.documentElement.style) {
   window.addEventListener("scroll", function(){
     var scrollTop = window.pageYOffset || document
       .documentElement.scrollTop;
-        if (scrollTop > lastScrollTop){
+        if (scrollTop > lastScrollTop || scrollTop === 0){
           button.style.bottom="-60px";
-        } else {
+          lastScrollTop = scrollTop;
+        } else if ((lastScrollTop - scrollTop) > 1000){
           button.style.bottom="0";
         }
-        lastScrollTop = scrollTop;
-
   })
   button.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
