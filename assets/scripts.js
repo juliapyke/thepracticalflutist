@@ -15,7 +15,7 @@ if ("scrollBehavior" in document.documentElement.style) {
           button.style.bottom="-60px";
           lastScrollTop = scrollTop;
         } else if (scrollUp) {
-          if ((scrollBottom - scrollTop) > 1000) {
+          if ((scrollBottom - scrollTop) > 500) {
             button.style.bottom="0";      
           }
         } else {
