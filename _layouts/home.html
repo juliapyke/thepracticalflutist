@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<meta name="description" content="{{ default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-
 <!-- Page Header -->
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
